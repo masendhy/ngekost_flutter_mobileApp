@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:several_days/models/tips_model.dart';
 import 'package:several_days/theme.dart';
 
 class TipsCard extends StatelessWidget {
   // const TipsCard({super.key});
+
+  TipsModel tips;
+  TipsCard(this.tips);
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Image.asset(
-          'assets/test.png',
+          tips.imageUrl,
           width: 50,
           height: 50,
         ),
@@ -20,14 +24,14 @@ class TipsCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Angkringan jadi pilihan\nfavorit makan malam',
+              tips.title,
               style: blackTextStyle.copyWith(fontSize: 15),
             ),
-            Text('Updated 23 Sept', style: greyTextStyle)
+            Text(tips.upDateAt, style: greyTextStyle)
           ],
         ),
         SizedBox(
-          width: 50,
+          width: 30,
         ),
         IconButton(
           onPressed: () {},
