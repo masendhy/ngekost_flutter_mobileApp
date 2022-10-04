@@ -5,8 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
 Color redColor = Color.fromARGB(255, 255, 0, 0);
-Color orangeColor = Color(0xffFF9376);
-Color pinkColor = Color(0xffFF5B5B);
+Color orangeColor = Colors.amber;
+Color pinkColor = Color(0xFFFF5B5B);
 Color blackColor = Color(0xff000000);
 Color whiteColor = Color(0xffFFFFFF);
 Color greyColor = Color(0xff7A7E86);

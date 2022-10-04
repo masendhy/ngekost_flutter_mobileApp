@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: edge),
                 child: Text(
-                  'Jl.Rinjani Timur III/05 Mojosongo 47121 - Solo',
+                  'Jl.Rinjani Timur III/05 Mojosongo 47127 - Solo',
                   style: greyTextStyle.copyWith(fontSize: 16),
                 ),
               ),
@@ -89,7 +89,6 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-
               Column(
                 children: [
                   SpaceCard(
@@ -108,11 +107,11 @@ class HomePage extends StatelessWidget {
               ),
               Column(
                 children: [
-                  KontrakanCard(
-                    KontrakanModel(
+                  SpaceCard(
+                    SpaceModel(
                         id: 4,
                         name: 'Rumah Kontrakan',
-                        imageUrl: 'assets/images/kost.jpg',
+                        imageUrl: 'assets/images/kontrakan.jpg',
                         price:
                             '${NumberFormat.currency(locale: "id").format(10000000)}',
                         stay: '2 Rumah'),
